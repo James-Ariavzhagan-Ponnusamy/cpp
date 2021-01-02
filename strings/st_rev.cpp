@@ -28,3 +28,5 @@ int main()
   ReplaceStringInPlace(s);
   std::cout << s;
 }
+
+//sihT si skeegrofskeeg 
