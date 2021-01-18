@@ -3,7 +3,10 @@ using namespace std;
 
 static void compute(int sdata, int xdata) {
 	int a = 0, b = 0;
+	// 2 * ( A & B) = sum -xxor
+	// sum = xor + 2 (a & b)
 	int adata = (sdata - xdata) / 2;
+	
 	for (int i = 0; i < 8 * sizeof(int); i++) {
 		unsigned int xi = xdata & (1 << i);
 		unsigned int ai = adata & (1 << i);
