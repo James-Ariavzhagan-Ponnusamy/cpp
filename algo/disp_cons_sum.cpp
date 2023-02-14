@@ -41,5 +41,22 @@ int main() {
     125 => 
     8 9 10 11 12 13 14 15 16 17
     23 24 25 26 27
+def function_name(p1):
+    # function body 
+    print("Contineous sum for", p1)
+    nBegin = 0;
+    nEnd = (p1+1)//2
+    while(nBegin<nEnd):
+        sum =0
+        for i in range(nBegin, nEnd,1):
+            sum += i
+            if ( sum == p1):
+                for j in range(nBegin, i+1, 1):
+                    print(j)
+        nBegin=nBegin+1
+    return
+
+function_name(100)
+function_name(125)
 
 */
