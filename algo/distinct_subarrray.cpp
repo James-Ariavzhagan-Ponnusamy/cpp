@@ -80,6 +80,41 @@ int main() {
 
 
 /*
+def function_name(p1,n):
+    # function body 
+    for i in range(0,n):
+        for j in range(i,n):
+            for k in range(i,j+1):
+                print(p1[k],end=" ")
+            print()
+        
+    return
+
+arr = [1, 2, 3, 4]
+n = len(arr)
+for i in arr:
+    print(i, sep=" ",end=" ")
+    
+print()
+print ("All Non-empty Subarrays")
+  
+function_name(arr, n);
+
+1 2 3 4 
+All Non-empty Subarrays
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+2 
+2 3 
+2 3 4 
+3 
+3 4 
+4 
+
+*/
+/*
 
 /*  C++ code to generate all possible subsequences.
     Time Complexity O(n * 2^n) */
