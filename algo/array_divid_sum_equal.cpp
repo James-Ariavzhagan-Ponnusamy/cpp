@@ -65,5 +65,28 @@ int main() {
 * Set 2 output
     1 2 3 4
     5 5
+    
+    
+    
+arr=[1,2,3,4,5,5]
+sl=0
+for i in arr:
+    sl+=i
+    print(i)
+print("\n\n\n\n")
+sr=0
+mp = -1
+for n in range(len(arr)-1,-1,-1):
+    sl = sl - arr[n]
+    sr = sr + arr[n]
+    if ( sl == sr):
+        print(n)
+        mp = n
+        break
+print("\n\n\n")
+for i in range(0,len(arr),1):
+    if (i == mp):
+        print("\n")
+    print(arr[i],sep=" ")
 */
 
